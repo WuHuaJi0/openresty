@@ -1,0 +1,82 @@
+2019/09/22 12:39:51 [error] 19298#0: [lua] init.lua:1: initinit
+2019/09/22 12:39:51 [error] 19298#0: *45 [lua] http.lua:1: content--  test, client: 172.16.200.1, server: localhost, request: "GET /test HTTP/1.1", host: "172.16.200.130"
+2019/09/22 12:58:05 [error] 19298#0: *50 lua tcp socket read timed out, client: 172.16.200.1, server: localhost, request: "GET /test HTTP/1.1", host: "172.16.200.130"
+2019/09/23 06:54:35 [alert] 40616#0: lua_code_cache is off; this will hurt performance in ./compile/nginx/conf/nginx.conf:17
+2019/09/23 06:54:35 [notice] 40616#0: signal process started
+2019/09/23 06:54:35 [alert] 16028#0: lua_code_cache is off; this will hurt performance in ./compile/nginx/conf/nginx.conf:17
+2019/09/23 06:54:52 [alert] 40634#0: lua_code_cache is off; this will hurt performance in ./compile/nginx/conf/nginx.conf:17
+2019/09/23 06:54:52 [notice] 40634#0: signal process started
+2019/09/23 06:54:52 [alert] 16028#0: lua_code_cache is off; this will hurt performance in ./compile/nginx/conf/nginx.conf:17
+2019/09/23 06:54:45 [error] 40636#0: *53 open() "./compile/nginx/html/favicon.ico" failed (2: No such file or directory), client: 172.16.200.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "172.16.200.130", referrer: "http://172.16.200.130/"
+2019/09/23 06:55:30 [alert] 40652#0: lua_code_cache is off; this will hurt performance in ./compile/nginx/conf/nginx.conf:17
+2019/09/23 06:55:30 [emerg] 40652#0: unknown directive "hello_world" in ./compile/nginx/conf/nginx.conf:32
+2019/09/23 06:55:54 [alert] 40669#0: lua_code_cache is off; this will hurt performance in ./compile/nginx/conf/nginx.conf:17
+2019/09/23 06:55:54 [notice] 40669#0: signal process started
+2019/09/23 06:55:54 [alert] 16028#0: lua_code_cache is off; this will hurt performance in ./compile/nginx/conf/nginx.conf:17
+2019/09/23 06:55:54 [emerg] 16028#0: unknown directive "mytest" in ./compile/nginx/conf/nginx.conf:32
+2019/09/23 06:56:01 [error] 40636#0: *53 open() "./compile/nginx/html/hello_world" failed (2: No such file or directory), client: 172.16.200.1, server: localhost, request: "GET /hello_world HTTP/1.1", host: "172.16.200.130"
+2019/09/23 06:56:12 [error] 40636#0: *53 open() "./compile/nginx/html/hello_world" failed (2: No such file or directory), client: 172.16.200.1, server: localhost, request: "GET /hello_world HTTP/1.1", host: "172.16.200.130"
+2019/09/23 06:56:12 [error] 40636#0: *53 open() "./compile/nginx/html/favicon.ico" failed (2: No such file or directory), client: 172.16.200.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "172.16.200.130", referrer: "http://172.16.200.130/hello_world"
+2019/09/23 06:56:12 [error] 40636#0: *53 open() "./compile/nginx/html/hello_world" failed (2: No such file or directory), client: 172.16.200.1, server: localhost, request: "GET /hello_world HTTP/1.1", host: "172.16.200.130"
+2019/09/23 06:56:12 [error] 40636#0: *53 open() "./compile/nginx/html/favicon.ico" failed (2: No such file or directory), client: 172.16.200.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "172.16.200.130", referrer: "http://172.16.200.130/hello_world"
+2019/09/23 06:56:13 [error] 40636#0: *53 open() "./compile/nginx/html/hello_world" failed (2: No such file or directory), client: 172.16.200.1, server: localhost, request: "GET /hello_world HTTP/1.1", host: "172.16.200.130"
+2019/09/23 06:56:18 [error] 40636#0: *53 lua tcp socket connect timed out, when connecting to 172.16.200.128:3306, client: 172.16.200.1, server: localhost, request: "GET /test HTTP/1.1", host: "172.16.200.130"
+2019/09/23 06:56:40 [error] 40636#0: *53 open() "./compile/nginx/html/hello_world" failed (2: No such file or directory), client: 172.16.200.1, server: localhost, request: "GET /hello_world HTTP/1.1", host: "172.16.200.130"
+2019/09/23 06:57:00 [error] 40636#0: *53 open() "./compile/nginx/html/hello_world" failed (2: No such file or directory), client: 172.16.200.1, server: localhost, request: "GET /hello_world HTTP/1.1", host: "172.16.200.130"
+2019/09/23 06:57:00 [error] 40636#0: *53 open() "./compile/nginx/html/favicon.ico" failed (2: No such file or directory), client: 172.16.200.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "172.16.200.130", referrer: "http://172.16.200.130/hello_world"
+2019/09/23 06:57:00 [error] 40636#0: *53 open() "./compile/nginx/html/hello_world" failed (2: No such file or directory), client: 172.16.200.1, server: localhost, request: "GET /hello_world HTTP/1.1", host: "172.16.200.130"
+2019/09/23 06:57:00 [error] 40636#0: *53 open() "./compile/nginx/html/favicon.ico" failed (2: No such file or directory), client: 172.16.200.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "172.16.200.130", referrer: "http://172.16.200.130/hello_world"
+2019/09/23 06:57:02 [alert] 40686#0: lua_code_cache is off; this will hurt performance in ./compile/nginx/conf/nginx.conf:17
+2019/09/23 06:57:02 [emerg] 40686#0: unexpected ";" in ./compile/nginx/conf/nginx.conf:32
+2019/09/23 06:57:03 [error] 40636#0: *53 open() "./compile/nginx/html/hello_world" failed (2: No such file or directory), client: 172.16.200.1, server: localhost, request: "GET /hello_world HTTP/1.1", host: "172.16.200.130"
+2019/09/23 06:57:03 [error] 40636#0: *53 open() "./compile/nginx/html/favicon.ico" failed (2: No such file or directory), client: 172.16.200.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "172.16.200.130", referrer: "http://172.16.200.130/hello_world"
+2019/09/23 06:57:04 [error] 40636#0: *53 open() "./compile/nginx/html/hello_world" failed (2: No such file or directory), client: 172.16.200.1, server: localhost, request: "GET /hello_world HTTP/1.1", host: "172.16.200.130"
+2019/09/23 06:57:04 [error] 40636#0: *53 open() "./compile/nginx/html/favicon.ico" failed (2: No such file or directory), client: 172.16.200.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "172.16.200.130", referrer: "http://172.16.200.130/hello_world"
+2019/09/23 06:57:04 [error] 40636#0: *53 open() "./compile/nginx/html/hello_world" failed (2: No such file or directory), client: 172.16.200.1, server: localhost, request: "GET /hello_world HTTP/1.1", host: "172.16.200.130"
+2019/09/23 06:57:04 [error] 40636#0: *53 open() "./compile/nginx/html/favicon.ico" failed (2: No such file or directory), client: 172.16.200.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "172.16.200.130", referrer: "http://172.16.200.130/hello_world"
+2019/09/23 06:57:04 [error] 40636#0: *53 open() "./compile/nginx/html/hello_world" failed (2: No such file or directory), client: 172.16.200.1, server: localhost, request: "GET /hello_world HTTP/1.1", host: "172.16.200.130"
+2019/09/23 06:57:04 [error] 40636#0: *53 open() "./compile/nginx/html/favicon.ico" failed (2: No such file or directory), client: 172.16.200.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "172.16.200.130", referrer: "http://172.16.200.130/hello_world"
+2019/09/23 06:57:04 [error] 40636#0: *53 open() "./compile/nginx/html/hello_world" failed (2: No such file or directory), client: 172.16.200.1, server: localhost, request: "GET /hello_world HTTP/1.1", host: "172.16.200.130"
+2019/09/23 06:57:05 [error] 40636#0: *53 open() "./compile/nginx/html/favicon.ico" failed (2: No such file or directory), client: 172.16.200.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "172.16.200.130", referrer: "http://172.16.200.130/hello_world"
+2019/09/23 06:57:43 [alert] 40703#0: lua_code_cache is off; this will hurt performance in ./compile/nginx/conf/nginx.conf:17
+2019/09/23 06:57:43 [notice] 40703#0: signal process started
+2019/09/23 06:57:43 [alert] 16028#0: lua_code_cache is off; this will hurt performance in ./compile/nginx/conf/nginx.conf:17
+2019/09/23 06:57:44 [error] 40705#0: *63 open() "./compile/nginx/html/favicon.ico" failed (2: No such file or directory), client: 172.16.200.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "172.16.200.130", referrer: "http://172.16.200.130/test"
+2019/09/23 06:57:45 [error] 40705#0: *63 open() "./compile/nginx/html/favicon.ico" failed (2: No such file or directory), client: 172.16.200.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "172.16.200.130", referrer: "http://172.16.200.130/test"
+2019/09/23 06:57:45 [error] 40705#0: *63 open() "./compile/nginx/html/favicon.ico" failed (2: No such file or directory), client: 172.16.200.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "172.16.200.130", referrer: "http://172.16.200.130/test"
+2019/09/23 06:57:45 [error] 40705#0: *63 open() "./compile/nginx/html/favicon.ico" failed (2: No such file or directory), client: 172.16.200.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "172.16.200.130", referrer: "http://172.16.200.130/test"
+2019/09/23 06:58:06 [alert] 40878#0: lua_code_cache is off; this will hurt performance in ./compile/nginx/conf/nginx.conf:17
+2019/09/23 06:58:06 [notice] 40878#0: signal process started
+2019/09/23 06:58:09 [alert] 40897#0: lua_code_cache is off; this will hurt performance in ./compile/nginx/conf/nginx.conf:17
+2019/09/23 06:58:14 [error] 40900#0: *1 open() "./compile/nginx/html/favicon.ico" failed (2: No such file or directory), client: 172.16.200.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "172.16.200.130", referrer: "http://172.16.200.130/test"
+2019/09/23 06:58:18 [error] 40900#0: *1 open() "./compile/nginx/html/favicon.ico" failed (2: No such file or directory), client: 172.16.200.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "172.16.200.130", referrer: "http://172.16.200.130/test"
+2019/09/23 06:59:32 [alert] 40916#0: lua_code_cache is off; this will hurt performance in ./compile/nginx/conf/nginx.conf:17
+2019/09/23 06:59:32 [emerg] 40916#0: directive "default_type" is not terminated by ";" in ./compile/nginx/conf/nginx.conf:33
+2019/09/23 06:59:38 [alert] 40934#0: lua_code_cache is off; this will hurt performance in ./compile/nginx/conf/nginx.conf:17
+2019/09/23 06:59:38 [notice] 40934#0: signal process started
+2019/09/23 06:59:38 [alert] 40898#0: lua_code_cache is off; this will hurt performance in ./compile/nginx/conf/nginx.conf:17
+2019/09/23 06:59:39 [error] 40936#0: *6 open() "./compile/nginx/html/favicon.ico" failed (2: No such file or directory), client: 172.16.200.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "172.16.200.130", referrer: "http://172.16.200.130/hello_world"
+2019/09/23 07:00:13 [alert] 40952#0: lua_code_cache is off; this will hurt performance in ./compile/nginx/conf/nginx.conf:17
+2019/09/23 07:00:13 [emerg] 40952#0: unknown directive "hello_world" in ./compile/nginx/conf/nginx.conf:33
+2019/09/23 07:00:22 [alert] 40969#0: lua_code_cache is off; this will hurt performance in ./compile/nginx/conf/nginx.conf:17
+2019/09/23 07:00:22 [emerg] 40969#0: unknown directive "my_test" in ./compile/nginx/conf/nginx.conf:33
+2019/09/23 07:00:27 [alert] 40986#0: lua_code_cache is off; this will hurt performance in ./compile/nginx/conf/nginx.conf:17
+2019/09/23 07:00:27 [emerg] 40986#0: unexpected ";" in ./compile/nginx/conf/nginx.conf:34
+2019/09/23 07:00:36 [alert] 41003#0: lua_code_cache is off; this will hurt performance in ./compile/nginx/conf/nginx.conf:17
+2019/09/23 07:00:36 [notice] 41003#0: signal process started
+2019/09/23 07:00:36 [alert] 40898#0: lua_code_cache is off; this will hurt performance in ./compile/nginx/conf/nginx.conf:17
+2019/09/23 07:00:54 [alert] 41021#0: lua_code_cache is off; this will hurt performance in ./compile/nginx/conf/nginx.conf:17
+2019/09/23 07:00:54 [notice] 41021#0: signal process started
+2019/09/23 07:00:54 [alert] 40898#0: lua_code_cache is off; this will hurt performance in ./compile/nginx/conf/nginx.conf:17
+2019/09/23 07:02:25 [alert] 41587#0: lua_code_cache is off; this will hurt performance in ./compile/nginx/conf/nginx.conf:17
+2019/09/23 07:02:25 [notice] 41587#0: signal process started
+2019/09/23 07:02:25 [alert] 40898#0: lua_code_cache is off; this will hurt performance in ./compile/nginx/conf/nginx.conf:17
+2019/09/23 07:02:42 [alert] 41605#0: lua_code_cache is off; this will hurt performance in ./compile/nginx/conf/nginx.conf:17
+2019/09/23 07:02:42 [emerg] 41605#0: unknown directive "nihao" in ./compile/nginx/conf/nginx.conf:33
+2019/09/23 07:02:48 [alert] 41622#0: lua_code_cache is off; this will hurt performance in ./compile/nginx/conf/nginx.conf:17
+2019/09/23 07:02:48 [notice] 41622#0: signal process started
+2019/09/23 07:02:48 [alert] 40898#0: lua_code_cache is off; this will hurt performance in ./compile/nginx/conf/nginx.conf:17
+2019/09/23 07:02:58 [alert] 41640#0: lua_code_cache is off; this will hurt performance in ./compile/nginx/conf/nginx.conf:17
+2019/09/23 07:02:58 [notice] 41640#0: signal process started
+2019/09/23 07:02:58 [alert] 40898#0: lua_code_cache is off; this will hurt performance in ./compile/nginx/conf/nginx.conf:17
+2019/09/23 07:03:01 [error] 41642#0: *17 open() "./compile/nginx/html/favicon.ico" failed (2: No such file or directory), client: 172.16.200.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "172.16.200.130", referrer: "http://172.16.200.130/hello_world"

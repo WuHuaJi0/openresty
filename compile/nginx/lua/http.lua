@@ -1,0 +1,25 @@
+--local mysql = require "resty.mysql"
+--
+--local db,err = mysql:new();
+--
+--if not db then
+--    ngx.say("fail mysql" , err)
+--end
+--
+--db:set_timeout(1000)
+--
+--local ok,err,errcode,sqlstate = db:connect{
+--    host = "172.16.200.128",
+--    port = 3306,
+--    database = "blog",
+--    user = "root",
+--    passwd = "ThisisR00t0fmysql",
+--    charset = "utf8",
+--    max_packet_size = 2048 ^ 2
+--}
+--
+--if not ok then
+--    ngx.say("fail to conect  ",err, errcode, sqlstate)
+--end
+
+ngx.say("hello")
