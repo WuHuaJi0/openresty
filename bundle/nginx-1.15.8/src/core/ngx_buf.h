@@ -18,9 +18,9 @@ typedef void *            ngx_buf_tag_t;
 typedef struct ngx_buf_s  ngx_buf_t;
 
 struct ngx_buf_s {
-    u_char          *pos;
-    u_char          *last;
-    off_t            file_pos;
+    u_char          *pos; // position 应该从pos这里开始处理数据
+    u_char          *last; // 有效内容到此为止，也就是 pos 和 last 之间的数据是希望Nginx处理的内容
+    off_t            file_pos; //处理文件时，和 pos last 含义相同
     off_t            file_last;
 
     u_char          *start;         /* start of buffer */
@@ -28,7 +28,6 @@ struct ngx_buf_s {
     ngx_buf_tag_t    tag;
     ngx_file_t      *file;
     ngx_buf_t       *shadow;
-
 
     /* the buf's content could be changed */
     unsigned         temporary:1;
@@ -56,6 +55,7 @@ struct ngx_buf_s {
 };
 
 
+// 实际上就是一串buf
 struct ngx_chain_s {
     ngx_buf_t    *buf;
     ngx_chain_t  *next;

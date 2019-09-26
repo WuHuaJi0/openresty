@@ -251,12 +251,13 @@ typedef struct {
 } ngx_http_headers_in_t;
 
 
+/*ngx_http_headers_out_t: 影响头部*/
 typedef struct {
-    ngx_list_t                        headers;
+    ngx_list_t                        headers; // 待发送的 http 头部链表
     ngx_list_t                        trailers;
 
-    ngx_uint_t                        status;
-    ngx_str_t                         status_line;
+    ngx_uint_t                        status; // 状态值
+    ngx_str_t                         status_line; // 响应行
 
     ngx_table_elt_t                  *server;
     ngx_table_elt_t                  *date;
@@ -389,7 +390,7 @@ struct ngx_http_request_s {
     ngx_array_t                      *upstream_states;
                                          /* of ngx_http_upstream_state_t */
 
-    ngx_pool_t                       *pool;
+    ngx_pool_t                       *pool; //内存池管理对象
     ngx_buf_t                        *header_in;
 
     ngx_http_headers_in_t             headers_in;
